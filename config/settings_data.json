@@ -61,7 +61,8 @@
           "home_page_only": false,
           "background": "#f3f3f3",
           "text_color": "#5c5c5c",
-          "content": "Free shipping on orders over $50",
+          "content": "Free shipping on orders over CA$50",
+          "contentMobile": "Free shipping over CA$50",
           "link": ""
         }
       },
