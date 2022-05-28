@@ -8072,6 +8072,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   align-items: center;
 }
 
+.Header__FlexItem--center {
+  justify-content: center;
+}
+
 .Header__FlexItem--fill:last-child {
   justify-content: flex-end;
 }
