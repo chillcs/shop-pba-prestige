@@ -162,11 +162,7 @@ HEADER CONTENT
         data-section-settings='{{ section_settings }}'
         role="banner">
   <div class="Header__Wrapper">
-    {%- if section.settings.menuCenter -%}
-    <div class="Header__FlexItem--center">
-    {%- else -%}
     <div class="Header__FlexItem Header__FlexItem--fill">
-    {%- endif -%}
       <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %}" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
         <span class="hidden-tablet-and-up">{%- render 'icon' with 'nav' -%}</span>
         <span class="hidden-phone">{%- render 'icon' with 'nav-desktop' -%}</span>
