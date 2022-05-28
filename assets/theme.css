@@ -11304,3 +11304,61 @@ shopify-payment-terms {
     margin-top: 65px;
   }
 }
+
+/* cStudio edits --- */
+
+.CS-TOPBAR {
+display: flex;
+justify-content: space-between;
+margin: auto 35px;
+}
+
+@media screen and (max-width: 1140px) {
+  .CS-TOPBAR {
+    margin: auto 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+  .CS-TOPBAR {
+    margin: auto 3px;
+    }
+}
+
+.CS-ICON-BOX {
+  display: flex;
+}
+
+.CS-ICON {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .CS-ICON {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .AnnouncementBar__Content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .CS-TOPBAR-MOBILE {
+    display: block;
+  }
+}
+
+.CS-HEADER {
+position: relative;
+width: 100%;
+max-height: 65px;
+}
+
+.CS-HEADER-MENU {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -2,14 +2,27 @@
   {%- unless section.settings.home_page_only and template != 'index' -%}
     <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="announcement-bar">
       <div class="AnnouncementBar">
-        <div class="AnnouncementBar__Wrapper">
-          <p class="AnnouncementBar__Content Heading">
+        <div class="AnnouncementBar__Wrapper CS-TOPBAR">
+          <p class="AnnouncementBar__Content Heading CS-CONTENT">
             {%- if section.settings.link -%}
               <a href="{{ section.settings.link }}">{{ section.settings.content | escape }}</a>
             {%- else -%}
               {{ section.settings.content | escape }}
             {%- endif -%}
           </p>
+          <p class="AnnouncementBar__Content Heading CS-CONTENT-MOBILE">
+            {%- if section.settings.link -%}
+              <a href="{{ section.settings.link }}">{{ section.settings.contentMobile | escape }}</a>
+            {%- else -%}
+              {{ section.settings.contentMobile | escape }}
+            {%- endif -%}
+          </p>
+          <div class="CS-ICON-BOX">
+            <div class="CS-ICON">Icon1</div>
+            <div class="CS-ICON">Icon2</div>
+            <div class="CS-ICON">Icon3</div>
+            <div class="CS-ICON">Icon4</div>
+          </div>
         </div>
       </div>
     </section>
@@ -59,6 +72,12 @@
       "type": "text",
       "id": "content",
       "label": "Text",
+      "default": "Announce something here"
+    },
+    {
+      "type": "text",
+      "id": "contentMobile",
+      "label": "Text on mobile",
       "default": "Announce something here"
     },
     {
