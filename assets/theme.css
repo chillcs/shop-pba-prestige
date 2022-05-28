@@ -11368,3 +11368,7 @@ max-height: 65px;
   left: 50%;
   transform: translateX(-50%);
 }
+
+.Header > div > div:nth-child(1) > nav > ul > li:last-of-type > a {
+  color: red;
+}
