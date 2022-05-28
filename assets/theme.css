@@ -11325,20 +11325,6 @@ margin: auto 35px;
     }
 }
 
-.CS-ICON-BOX {
-  display: flex;
-}
-
-.CS-ICON {
-  margin-left: 20px;
-}
-
-@media screen and (max-width: 640px) {
-  .CS-ICON {
-    margin-left: 10px;
-  }
-}
-
 @media screen and (max-width: 640px) {
   .AnnouncementBar__Content {
     display: none;
@@ -11354,6 +11340,20 @@ margin: auto 35px;
 @media screen and (min-width: 640px) {
   .CS-TOPBAR-MOBILE {
     display: none;
+  }
+}
+
+.CS-ICON-BOX {
+  display: flex;
+}
+
+.CS-ICON {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 640px) {
+  .CS-ICON {
+    margin-left: 10px;
   }
 }
 
