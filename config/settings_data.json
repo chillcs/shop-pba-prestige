@@ -50,25 +50,36 @@
         "type": "sidebar-menu",
         "settings": {
           "primary_menu": "main-menu",
+          "secondary_menu": "",
           "show_social_media": true
         }
       },
       "announcement": {
         "type": "announcement",
         "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
           "background": "#f3f3f3",
           "text_color": "#5c5c5c",
-          "content": "Announce something here"
+          "content": "Free shipping on orders over $50",
+          "link": ""
         }
       },
       "header": {
         "type": "header",
         "settings": {
           "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/HWL-BNB.png",
           "logo_max_width": 140,
+          "mobile_logo_max_width": 90,
+          "show_country_selector": false,
+          "show_locale_selector": true,
           "navigation_menu": "main-menu",
-          "navigation_style": "center",
-          "enable_transparent_header": true,
+          "navigation_style": "logoLeft",
+          "show_icons": true,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
           "transparent_text_color": "#ffffff"
         }
       },
@@ -103,10 +114,28 @@
           "footer-2"
         ],
         "settings": {
-          "show_payment_methods": true
+          "show_payment_methods": true,
+          "show_country_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Popup",
+          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Allure": {
